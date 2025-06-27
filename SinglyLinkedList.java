@@ -98,6 +98,7 @@ public class SinglyLinkedList {
 		Node prev=get(index-1);
 		int val=prev.next.val;
 		prev.next=prev.next.next;
+		return val;
 	}
 	public Node get(int index) {
 		Node node=head;
